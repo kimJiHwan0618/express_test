@@ -35,17 +35,28 @@
 //   res.sendFile(path.join(__dirname + "/cliend/build/index.html"))
 // })
 
-console.log('gdgd')
 
-const express = require('express');
-const cors = require('cors');
-const app = express();
+// const express = require('express');
+// const cors = require('cors');
+// const app = express();
 
-const corsOptions = {
-  origin: 'http://127.0.0.1:5500',
-  credentials: true,
-};
+// const corsOptions = {
+//   origin: 'http://127.0.0.1:5500',
+//   credentials: true,
+// };
 
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
+
+var express = require('express');
+var router = express.Router();
+
+
+router.get('/', function (req, res, next) {
+  res.status(200).json({
+    message: "sopt 서버 여러분 안녕하세요~,sopt-Media에 좋아요와 댓글 부탁드립니다!!(꾸벅)",
+  })
+});
+
+module.exports = router;
