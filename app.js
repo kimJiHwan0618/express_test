@@ -35,12 +35,14 @@
 //   res.sendFile(path.join(__dirname + "/cliend/build/index.html"))
 // })
 
+console.log('gdgd')
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
 const corsOptions = {
-  origin: '',
+  origin: 'http://127.0.0.1:5500',
   credentials: true,
 };
 
