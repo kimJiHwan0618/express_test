@@ -36,17 +36,17 @@
 // })
 
 
-// const express = require('express');
-// const cors = require('cors');
-// const app = express();
+const express = require('express');
+const cors = require('cors');
+const app = express();
 
-// const corsOptions = {
-//   origin: 'http://127.0.0.1:5500',
-//   credentials: true,
-// };
+const corsOptions = {
+  origin: 'http:127.0.0.1:5500/',
+  credentials: true,
+};
 
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 
 // var express = require('express');
@@ -62,10 +62,10 @@
 // module.exports = router;
 
 
-const express = require('express')
-const app = express();
-const port = process.env.PORT || 3000
+// const express = require('express')
+// const app = express();
+// const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => res.send('Hello World!'))
+// app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(port, () => console.log(`err ${port}`));
+// app.listen(port, () => console.log(`err ${port}`));
